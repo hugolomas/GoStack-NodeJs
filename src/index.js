@@ -57,7 +57,7 @@ app.put('/projects/:id', (request, response) => {
   const projectIndex = projects.findIndex(project => project.id === id);
 
   if(projectIndex < 0){
-    return response.status(400).json({ error: 'Project not found.'})
+    return response.status(400).json({ error: 'Project not found.' })
   } 
   
   const project = {
